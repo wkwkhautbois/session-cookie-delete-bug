@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<title>Hello Spring Security</title>
+<meta charset="utf-8" />
+</head>
+<body>
+	<form action="#" th:action="@{/logout}" method="post">
+		<input type="submit" value="Logout" />
+	</form>
+	<h1>Delete Cookie Problem Sample</h1>
+	<p>
+	    This is a sample for spring security issue.
+	</p>
+	<p>
+	    Though deleteCookies("JSESSIONID") config is set, JSESSIONID cookie is not deleted after login success.
+	</p>
+</body>
+</html>
